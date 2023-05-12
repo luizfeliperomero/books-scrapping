@@ -6,7 +6,7 @@ WEBSITE_URL = 'https://books.toscrape.com/'
 EQUALS_CHAR = 20 
 SLEEP_INTERVAL = 0.2
 Regex = Enum('Regex', {'RATING_3_to_5':'star-rating (Three|Four|Five)'})
-UPDATES = 10 
+UPDATES = 5 
 
 def get_html():
     try:
