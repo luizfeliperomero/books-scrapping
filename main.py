@@ -18,7 +18,7 @@ data_file = open("data.txt", "w+")
 print(('=' * EQUALS_CHAR) + "Books from " + Fore.LIGHTBLUE_EX + WEBSITE_URL + Fore.RESET + ('=' * EQUALS_CHAR) )
 print("\n")
 
-for i in range(0, 5):
+for i in range(0, UPDATES):
     html = get_html()
     bs = BeautifulSoup(html.read(), 'html.parser')
 
@@ -45,7 +45,7 @@ for i in range(0, 5):
             if(i == 0):
                 first_prices.append(book.price_euro)
                 print(book.name + " : " + b.h3.find_next_sibling().p.get_text())
-            elif(i == 4):
+            elif(i == UPDATES - 1):
                 book.last_price = book.price_euro
 
             books.append(book)
