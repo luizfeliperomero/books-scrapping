@@ -11,7 +11,7 @@ def compare_list_of_books(current, previous, currency):
         if(current[j].price_euro > previous[j].price_euro):
             diff = current[j].price_euro - previous[j].price_euro
             percentage = calculate_percentage(diff, previous[j].price_euro)
-            info = current[j].name + " : " + Fore.YELLOW + currency + str(previous[j].price_euro) + Fore.BLUE + " --> " + Fore.GREEN + currency + str(current[j].price_euro) + Fore.RESET + " | " + Fore.CYAN + str(percentage) + "%" + Fore.GREEN + ARROW_UP + Fore.RESET
+            info = current[j].name + " : " + Fore.YELLOW + currency.value + str(previous[j].price_euro) + Fore.BLUE + " --> " + Fore.GREEN + currency.value + str(current[j].price_euro) + Fore.RESET + " | " + Fore.CYAN + str(percentage) + "%" + Fore.GREEN + ARROW_UP + Fore.RESET
 
             print(info)
             print("-" * TIMES_DASH)
@@ -19,13 +19,13 @@ def compare_list_of_books(current, previous, currency):
         elif(current[j].price_euro < previous[j].price_euro):
             diff = previous[j].price_euro - current[j].price_euro
             percentage = calculate_percentage(diff, previous[j].price_euro)
-            info = current[j].name + " : " + Fore.YELLOW + currency + str(previous[j].price_euro) + Fore.BLUE + " --> " + Fore.RED + currency + str(current[j].price_euro) + Fore.RESET + " | " + Fore.CYAN + str(percentage) + "%" + Fore.RED + ARROW_DOWN + Fore.RESET
+            info = current[j].name + " : " + Fore.YELLOW + currency.value + str(previous[j].price_euro) + Fore.BLUE + " --> " + Fore.RED + currency.value + str(current[j].price_euro) + Fore.RESET + " | " + Fore.CYAN + str(percentage) + "%" + Fore.RED + ARROW_DOWN + Fore.RESET
 
             print(info)
             print("-" * TIMES_DASH)
 
         else:
-            info = current[j].name + " : " + Fore.YELLOW + currency + str(previous[j].price_euro) + Fore.BLUE + " --> " + Fore.RESET + currency + str(current[j].price_euro)
+            info = current[j].name + " : " + Fore.YELLOW + currency.value + str(previous[j].price_euro) + Fore.BLUE + " --> " + Fore.RESET + currency.value + str(current[j].price_euro)
 
             print(info)
             print("-" * TIMES_DASH)
