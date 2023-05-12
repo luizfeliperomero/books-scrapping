@@ -10,6 +10,6 @@ class Book:
         print(self.name + " : " + str(self.price_euro))
 
     def get_price_variation(self):
-        return self.last_price - self.first_price
+        return round(self.last_price - self.first_price, 2)
 
 
