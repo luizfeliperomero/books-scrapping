@@ -17,10 +17,10 @@ def get_html():
 
 def generate_html(books):
     html_file = open("index.html", "w+")
-    html_file.write("<!DOCTYPE html><html lang='pt-br'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><meta http-equiv='X-UA-Compatible' content='ie=edge'><title>My Website</title><link rel='stylesheet' href='./style.css'><link rel='icon' href='./favicon.ico' type='image/x-icon'></head><body><main class='content'><h1>Histórico de Preços</h1><div class='books'>")
+    html_file.write("<!DOCTYPE html><html lang='pt-br'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><meta http-equiv='X-UA-Compatible' content='ie=edge'><title>My Website</title><link rel='stylesheet' href='./styles.css'><link rel='icon' href='./favicon.ico' type='image/x-icon'></head><body><main class='content'><h1>Histórico de Preços</h1><div class='books'>")
 
     for book in books:
-        html_file.write("<div class='book'><p>" + book.name + "<p><p>" + str(book.first_price) + "<p><p>" + str(book.last_price) + "<p></div>");
+        html_file.write("<div class='book'><p class='name'>" + book.name + "</p><p class='prices'>" + str(book.first_price) + " " + u"\u2192" + " " + str(book.last_price) + "</p></div>");
 
     html_file.write("</main></div></body></html>");
     html_file.close()

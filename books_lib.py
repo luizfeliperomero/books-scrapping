@@ -7,7 +7,7 @@ TIMES_DASH = 80
 
 def compare_list_of_books(current, previous, currency):
     print("\n")
-    for j in range(0, len(current) - 1):
+    for j in range(0, len(current)):
         if(current[j].price_euro > previous[j].price_euro):
             diff = current[j].price_euro - previous[j].price_euro
             percentage = calculate_percentage(diff, previous[j].price_euro)
@@ -33,3 +33,9 @@ def compare_list_of_books(current, previous, currency):
 
 def calculate_percentage(value, total):
     return round((value / total) * 100, 2)
+
+
+def add_first_prices(prices, books):
+    for i in range(0, len(books)):
+        books[i].first_price = prices[i]
+        

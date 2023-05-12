@@ -4,7 +4,7 @@ import random
 import time
 import re
 
-from books_lib import compare_list_of_books
+from books_lib import *
 from book import Book
 from common_lib import *
 
