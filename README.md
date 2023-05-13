@@ -27,7 +27,7 @@ Um arquivo html será gerado contendo o preço inicial e o preço final de cada 
 2. No diretório raiz: docker build . -t books-scrapping:1.0
 3. No diretório raiz: docker run books-scrapping:1.0
 
-### Manualmente
+#### Manualmente
 
 Para instalar manualmente é necessário possuir Python instalado em sua máquina
 
