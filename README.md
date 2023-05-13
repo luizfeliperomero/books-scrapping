@@ -7,14 +7,14 @@ Este Web Scrapping tem como objetivo extrair informações sobre os preços dos 
 
 ### Output
 
-- Terminal\
+- **Terminal**\
 No terminal é possível visualizar as variações de preço a cada atualização
   - Caso o preço tenha aumentado em relação a última atualização o valor será exibido na cor verde seguido de uma seta para cima
   - Caso o preço tenha diminuído em relação a última atualização o valor será exibido na cor vermelha seguido de uma seta para baixo
   - Caso o preço não tenha mudado em relação a última atualização o valor será exibido em amarelo  
   
-- Arquivo de texto\
+- **Arquivo de texto**\
 Um arquivo txt será gerado contendo o nome seguido do preço do livro em cada atualização
 
-- Html\
+- **Html**\
 Um arquivo html será gerado contendo o preço inicial e o preço final de cada livro, juntamente com a variação do preço desde a primeira até a última atualização
