@@ -1,0 +1,7 @@
+version: "3"
+services:
+  books-scrapping:
+    build: .
+    volumes:
+      - ./output_files:/app/output_files
+
