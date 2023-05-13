@@ -24,14 +24,14 @@ Um arquivo html será gerado na pasta "output_files" contendo o preço inicial e
 #### Docker Compose
 
 1. git clone https://github.com/luizfeliperomero/books-scrapping.git
-2. No diretório raiz: docker-compose up
+2. No diretório raíz: docker-compose up
 
 #### Manualmente
 
 Para instalar manualmente é necessário possuir Python instalado em sua máquina
 
 1. git clone https://github.com/luizfeliperomero/books-scrapping.git
-2. No diretório raiz: pip install beautifulsoup4
-3. No diretório raiz: pip install colorama
-4. No diretório raiz: python3 main.py
+2. No diretório raíz: pip install beautifulsoup4
+3. No diretório raíz: pip install colorama
+4. No diretório raíz: python3 main.py
 
