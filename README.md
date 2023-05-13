@@ -1,8 +1,8 @@
-# Web Scrapping do site https://books.toscrape.com
+# Web Scraping do site https://books.toscrape.com
 
 ## Descrição
 
-Este Web Scrapping tem como objetivo extrair informações sobre os preços dos livros de 3 a 5 estrelas em 5 requisições e mostrar para o usuário as variações.
+Este Web Scraping tem como objetivo extrair informações sobre os preços dos livros de 3 a 5 estrelas em 5 requisições e mostrar para o usuário as variações.
 (Como o site não possui variação de preço, essa variação é simulada pelo programa)
 
 ### Output
