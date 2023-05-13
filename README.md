@@ -23,16 +23,16 @@ Um arquivo html será gerado contendo o preço inicial e o preço final de cada 
 
 #### Docker
 
-1 git clone https://github.com/luizfeliperomero/books-scrapping.git
-2 No diretório raiz: docker build . -t books-scrapping:1.0
-3 No diretório raiz: docker run books-scrapping:1.0
+1. git clone https://github.com/luizfeliperomero/books-scrapping.git
+2. No diretório raiz: docker build . -t books-scrapping:1.0
+3. No diretório raiz: docker run books-scrapping:1.0
 
 ### Manualmente
 
 Para instalar manualmente é necessário possuir Python instalado em sua máquina
 
-1 git clone https://github.com/luizfeliperomero/books-scrapping.git
-2 No diretório raiz: pip install beautifulsoup4
-3 No diretório raiz: pip install colorama
-4 No diretório raiz: python3 main.py
+1. git clone https://github.com/luizfeliperomero/books-scrapping.git
+2. No diretório raiz: pip install beautifulsoup4
+3. No diretório raiz: pip install colorama
+4. No diretório raiz: python3 main.py
 
