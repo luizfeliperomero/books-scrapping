@@ -1,12 +1,14 @@
 from enum import Enum
 from urllib.request import urlopen
+import os
 
 Currency = Enum('Currency', {'EUR': '€', 'BRL': 'R$', 'US': '$'})
 WEBSITE_URL = 'https://books.toscrape.com/'
 EQUALS_CHAR = 20 
 SLEEP_INTERVAL = 0.2
 Regex = Enum('Regex', {'RATING_3_to_5':'star-rating (Three|Four|Five)'})
-UPDATES = 5 
+UPDATES = 5
+OUTPUT_FILES_DIR = "output_files"
 
 def get_html():
     try:
@@ -17,7 +19,7 @@ def get_html():
         raise Exception(http_error)
 
 def generate_html(books):
-    html_file = open("index.html", "w+")
+    html_file = open(os.path.join(OUTPUT_FILES_DIR, "index.html"), "w+")
     html_file.write("<!DOCTYPE html><html lang='pt-br'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><meta http-equiv='X-UA-Compatible' content='ie=edge'><title>Books Scrapping - Luiz Felipe</title><link rel='stylesheet' href='./styles.css'><link rel='icon' href='./favicon.ico' type='image/x-icon'></head><body><main class='content'><div class='info'><h1>Variação de Preços</h1><h2>Livros de 3 a 5 estrelas do site <a href='https://books.toscrape.com'>https://books.toscrape.com</a></h2></div><div class='books'>")
 
     for book in books:
