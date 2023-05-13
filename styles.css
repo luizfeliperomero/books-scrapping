@@ -23,6 +23,8 @@ body {
 
 .book {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 5px dashed;
+  border-image: linear-gradient(to right, #f6d365, #fda085) 1;
   width: 200px;
   height: 230px;
   display: flex;
