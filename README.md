@@ -18,3 +18,21 @@ Um arquivo txt será gerado contendo o nome seguido do preço do livro em cada a
 
 - **Html**\
 Um arquivo html será gerado contendo o preço inicial e o preço final de cada livro, juntamente com a variação do preço desde a primeira até a última atualização
+
+### Instalação
+
+#### Docker
+
+- git clone https://github.com/luizfeliperomero/books-scrapping.git
+- No diretório raiz: docker build . -t books-scrapping:1.0
+- No diretório raiz: docker run books-scrapping:1.0
+
+### Manualmente
+
+Para instalar manualmente é necessário possuir Python instalado em sua máquina
+
+- git clone https://github.com/luizfeliperomero/books-scrapping.git
+- No diretório raiz: pip install beautifulsoup4
+- No diretório raiz: pip install colorama
+- No diretório raiz: python3 main.py
+
