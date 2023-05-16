@@ -1,11 +1,11 @@
 from enum import Enum
 from urllib.request import urlopen
 import os
+import sys
 import openai
 from colorama import Fore
 
-#openai.api_key = "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" 
-openai.api_key = "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" 
+openai.api_key = sys.argv[1]
 Currency = Enum('Currency', {'EUR': '€', 'BRL': 'R$', 'US': '$'})
 WEBSITE_URL = 'https://books.toscrape.com/'
 EQUALS_CHAR = 20 
