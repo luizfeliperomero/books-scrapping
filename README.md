@@ -33,7 +33,7 @@ Para rodar o programa é necessário possuir uma Api Key da OpenAI.
 
 1. git clone https://github.com/luizfeliperomero/books-scrapping.git
 2. No diretório raíz: docker-compose run -e OPENAI_API_KEY=SUA_API_KEY books-scraping\
-obs: Não esqueça de substituir SUA_API_KEY pela sua API Key verdadeira
+*obs: Não esqueça de substituir SUA_API_KEY pela sua API Key verdadeira*
 
 #### Manualmente
 
@@ -44,5 +44,5 @@ Para instalar manualmente é necessário possuir Python instalado em sua máquin
 3. No diretório raíz: pip install colorama
 4. No diretório raíz: pip install openai
 5. No diretório raíz: python3 main.py SUA_API_KEY\
-obs: Não esqueça de substituir SUA_API_KEY pela sua API Key verdadeira
+*obs: Não esqueça de substituir SUA_API_KEY pela sua API Key verdadeira*
 
