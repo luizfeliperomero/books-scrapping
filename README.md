@@ -40,9 +40,7 @@ Para rodar o programa é necessário possuir uma Api Key da OpenAI.
 Para instalar manualmente é necessário possuir Python instalado em sua máquina
 
 1. git clone https://github.com/luizfeliperomero/books-scrapping.git
-2. No diretório raíz: **pip install beautifulsoup4**
-3. No diretório raíz: **pip install colorama**
-4. No diretório raíz: **pip install openai**
-5. No diretório raíz: **python3 main.py SUA_API_KEY**\
+2. No diretório raíz: **pip install -r requirements.txt**
+3. No diretório raíz: **python3 main.py SUA_API_KEY**\
 *obs: Não esqueça de substituir SUA_API_KEY pela sua API Key verdadeira*
 
