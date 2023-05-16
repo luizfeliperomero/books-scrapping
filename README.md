@@ -42,7 +42,7 @@ Para a geração de análise do ChatGPT é necessário possuir uma Api Key da Op
 
 1. `git clone https://github.com/luizfeliperomero/books-scrapping.git`
   ##### Com análise do ChatGPT
-2. No diretório raíz: `docker-compose run -e OPENAI_API_KEY=SUA_API_KEY books-scraping`
+2. No diretório raíz: `docker-compose run -e OPENAI_API_KEY=SUA_API_KEY books-scraping`\
 *obs: Não esqueça de substituir SUA_API_KEY pela sua API Key verdadeira*
   ##### Sem análise do ChatGPT
 2. No diretório raíz: `docker-compose up`
