@@ -1,7 +1,9 @@
 version: "3"
 services:
-  books-scrapping:
+  books-scraping:
     build: .
     volumes:
       - ./output_files:/app/output_files
+    environment:
+      - OPENAI_API_KEY 
 
