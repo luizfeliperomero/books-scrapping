@@ -12,12 +12,21 @@ No terminal é possível visualizar as variações de preço a cada atualizaçã
   - Caso o preço tenha aumentado em relação a última atualização o valor será exibido na cor verde seguido de uma seta para cima
   - Caso o preço tenha diminuído em relação a última atualização o valor será exibido na cor vermelha seguido de uma seta para baixo
   - Caso o preço não tenha mudado em relação a última atualização o valor será exibido em amarelo  
+  - 
+#### Exemplo
+![terminal_AEC](https://github.com/luizfeliperomero/books-scrapping/assets/83089830/f8815dee-7428-4e47-b271-b980259bac7f)
  
 - **Arquivo de texto**\
 Um arquivo txt será gerado na pasta "output_files" contendo o nome seguido do preço do livro em cada atualização
 
+#### Exemplo
+![data_AEC](https://github.com/luizfeliperomero/books-scrapping/assets/83089830/2b8a69a0-4ec1-4ec5-8df9-863846a22349)
+
 - **Html**\
 Um arquivo html será gerado na pasta "output_files" contendo o preço inicial e o preço final de cada livro, juntamente com a variação do preço desde a primeira até a última atualização. Uma análise dos dados extraídos feita pelo ChatGPT será exibida caso uma Api Key válida for fornecida.
+
+#### Exemplo
+![html_AEC](https://github.com/luizfeliperomero/books-scrapping/assets/83089830/8a52ef93-a07c-4397-ae11-520e3274f34a)
 
 ### OpenAI API Key
 Para a geração de análise do ChatGPT é necessário possuir uma Api Key da OpenAI.
