@@ -5,7 +5,15 @@ import sys
 import openai
 from colorama import Fore
 
-openai.api_key = sys.argv[1]
+def get_api_key():
+    key = "";
+    if(os.getenv("OPENAI_API_KEY") != None):
+        key = os.getenv("OPENAI_API_KEY")
+    else:
+        key = sys.argv[1]
+    return key
+
+openai.api_key = get_api_key()
 Currency = Enum('Currency', {'EUR': '€', 'BRL': 'R$', 'US': '$'})
 WEBSITE_URL = 'https://books.toscrape.com/'
 EQUALS_CHAR = 20 
@@ -41,7 +49,7 @@ def get_chat_gpt_analysis():
     response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[
-        {"role": "user", "content": "Os seguintes dados correspondem ao preço de livros ao longo de cinco requisições realizadas previamente: " + data_file_str + ". Escreva uma breve análise sobre a variação de preços."},
+        {"role": "user", "content": "Os seguintes dados correspondem ao preço de livros ao longo de cinco requisições realizadas previamente: " + data_file_str + ". Escreva uma breve análise sobre a variação de preços e escreva qual foi o maior e menor preço atingido."},
         ]
     )
     result = ''
