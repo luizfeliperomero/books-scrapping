@@ -13,7 +13,8 @@ from common_lib import *
 books = []
 previous_books = []
 first_prices = []
-data_file = open("data.txt", "w+")
+data_file = open(os.path.join(OUTPUT_FILES_DIR, "data.txt"), "w+")
+
 
 print(('=' * EQUALS_CHAR) + "Books from " + Fore.LIGHTBLUE_EX + WEBSITE_URL + Fore.RESET + ('=' * EQUALS_CHAR) )
 print("\n")
@@ -62,5 +63,5 @@ for i in range(0, UPDATES):
     time.sleep(SLEEP_INTERVAL)
 
 add_first_prices(first_prices, previous_books)
-generate_html(previous_books)
 data_file.close()
+generate_html(previous_books)
