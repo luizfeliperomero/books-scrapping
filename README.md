@@ -22,7 +22,7 @@ Um arquivo html será gerado na pasta "output_files" contendo o preço inicial e
 ### OpenAI API Key
 Para rodar o programa é necessário possuir uma Api Key da OpenAI.
 
-### Como criar uma Api Key
+#### Como criar uma Api Key
 
 1. Entre no website da OpenAI https://platform.openai.com e faça login.
 2. Clique no ícone de perfil no canto superior direito da página e selecione "View API Keys".
