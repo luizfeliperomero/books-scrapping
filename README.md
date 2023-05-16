@@ -12,15 +12,15 @@ No terminal é possível visualizar as variações de preço a cada atualizaçã
   - Caso o preço tenha aumentado em relação a última atualização o valor será exibido na cor verde seguido de uma seta para cima
   - Caso o preço tenha diminuído em relação a última atualização o valor será exibido na cor vermelha seguido de uma seta para baixo
   - Caso o preço não tenha mudado em relação a última atualização o valor será exibido em amarelo  
-  
+ 
 - **Arquivo de texto**\
 Um arquivo txt será gerado na pasta "output_files" contendo o nome seguido do preço do livro em cada atualização
 
 - **Html**\
-Um arquivo html será gerado na pasta "output_files" contendo o preço inicial e o preço final de cada livro, juntamente com a variação do preço desde a primeira até a última atualização. Uma análise dos dados extraídos feita pelo ChatGPT será exibida.
+Um arquivo html será gerado na pasta "output_files" contendo o preço inicial e o preço final de cada livro, juntamente com a variação do preço desde a primeira até a última atualização. Uma análise dos dados extraídos feita pelo ChatGPT será exibida caso uma Api Key válida for fornecida.
 
 ### OpenAI API Key
-Para rodar o programa é necessário possuir uma Api Key da OpenAI.
+Para a geração de análise do ChatGPT é necessário possuir uma Api Key da OpenAI.
 
 #### Como criar uma Api Key
 
@@ -32,8 +32,11 @@ Para rodar o programa é necessário possuir uma Api Key da OpenAI.
 #### Docker Compose
 
 1. git clone https://github.com/luizfeliperomero/books-scrapping.git
+  ##### Com análise do ChatGPT
 2. No diretório raíz: **docker-compose run -e OPENAI_API_KEY=SUA_API_KEY books-scraping**\
 *obs: Não esqueça de substituir SUA_API_KEY pela sua API Key verdadeira*
+  ##### Sem análise do ChatGPT
+2. No diretório raíz: **docker-compose up**
 
 #### Manualmente
 
@@ -41,6 +44,8 @@ Para instalar manualmente é necessário possuir Python instalado em sua máquin
 
 1. git clone https://github.com/luizfeliperomero/books-scrapping.git
 2. No diretório raíz: **pip install -r requirements.txt**
+##### Com análise do ChatGPT
 3. No diretório raíz: **python3 main.py SUA_API_KEY**\
 *obs: Não esqueça de substituir SUA_API_KEY pela sua API Key verdadeira*
-
+##### Sem análise do ChatGPT
+3. No diretório raíz: **python3 main.py**
