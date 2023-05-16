@@ -31,21 +31,21 @@ Para a geração de análise do ChatGPT é necessário possuir uma Api Key da Op
 ### Instalação
 #### Docker Compose
 
-1. git clone https://github.com/luizfeliperomero/books-scrapping.git
+1. `git clone https://github.com/luizfeliperomero/books-scrapping.git`
   ##### Com análise do ChatGPT
-2. No diretório raíz: **docker-compose run -e OPENAI_API_KEY=SUA_API_KEY books-scraping**\
+2. No diretório raíz: `docker-compose run -e OPENAI_API_KEY=SUA_API_KEY books-scraping`
 *obs: Não esqueça de substituir SUA_API_KEY pela sua API Key verdadeira*
   ##### Sem análise do ChatGPT
-2. No diretório raíz: **docker-compose up**
+2. No diretório raíz: `docker-compose up`
 
 #### Manualmente
 
 Para instalar manualmente é necessário possuir Python instalado em sua máquina
 
-1. git clone https://github.com/luizfeliperomero/books-scrapping.git
-2. No diretório raíz: **pip install -r requirements.txt**
+1. `git clone https://github.com/luizfeliperomero/books-scrapping.git`
+2. No diretório raíz: `pip install -r requirements.txt`
 ##### Com análise do ChatGPT
-3. No diretório raíz: **python3 main.py SUA_API_KEY**\
+3. No diretório raíz: `python3 main.py SUA_API_KEY`\
 *obs: Não esqueça de substituir SUA_API_KEY pela sua API Key verdadeira*
 ##### Sem análise do ChatGPT
-3. No diretório raíz: **python3 main.py**
+3. No diretório raíz: `python3 main.py`
